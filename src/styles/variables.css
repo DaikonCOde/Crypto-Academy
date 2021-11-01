@@ -1,0 +1,9 @@
+:root {
+    --colorTitle: #333333;
+    --colorFont: #555555;
+    --colorPrimary: #8282C8;
+    --colorPrimaryHover: #6464AA;
+
+
+    --borderRadius: 15px;
+}
