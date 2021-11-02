@@ -1,7 +1,4 @@
 import React from "react";
-import FormGroup from '@mui/material/FormGroup';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox'
 
 import { MdFilterAlt, MdListAlt } from 'react-icons/md';
 import FilterItem from "./FilterItem";
@@ -28,11 +25,7 @@ function Filter() {
                     <span className="icon-filter">< MdListAlt /></span> 
                     Order
                 </span>
-                <FormGroup>
-                    <FormControlLabel control={<Checkbox defaultChecked />} label="Benefit" />
-                    <FormControlLabel control={<Checkbox />} label="Min Investment" />
-                    <FormControlLabel control={<Checkbox />} label="Start Date" />
-                </FormGroup>
+                <FilterItem title={"Order By"} />
             </div>  
         </div>
     );

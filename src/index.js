@@ -9,7 +9,15 @@ import './index.css';
 
 const client = new ApolloClient({
   uri: 'http://localhost:3001/graphql',
-  cache: new InMemoryCache()
+  cache: new InMemoryCache(),
+  name: "mind-crypto",
+  version: '1.0.0',
+  queryDeduplication: false,
+  defaultOptions: {
+    watchQuery: {
+      fetchPolicy: 'cache-and-network',
+    },
+  },
 });
 
 ReactDOM.render(

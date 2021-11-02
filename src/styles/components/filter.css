@@ -21,11 +21,15 @@
     background: var(--colorPrimary);
     color: #fff;
     padding: 15px 20px;
-    transition: background .3s linear;
+    transition: all .3s linear;
 }
 
 .search .search-label:hover {
-    background: var(--colorPrimaryHover);
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: var(--colorPrimary);
+    background: transparent;
+    color: var(--colorFont);
 }
 
 /* Filter */
@@ -51,8 +55,4 @@
     display: inline-block;
     vertical-align: middle;
     line-height: 0;
-}
-
-.title-filter-second {
-    margin: 0 0 20px 0; 
 }

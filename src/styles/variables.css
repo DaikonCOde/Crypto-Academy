@@ -1,7 +1,7 @@
 :root {
     --colorTitle: #333333;
-    --colorFont: #555555;
-    --colorPrimary: #8282C8;
+    --colorFont: #999999;
+    --colorPrimary: linear-gradient(225deg, #50FFF5 0%, #6B2BFE 100%);;
     --colorPrimaryHover: #6464AA;
 
 
